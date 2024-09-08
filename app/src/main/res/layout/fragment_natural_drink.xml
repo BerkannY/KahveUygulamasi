@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Menufragments.NaturalDrinkFragment">
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="top"
+        android:layout_marginTop="16dp"
+        android:background="#F5F5F5"
+        tools:listitem="@layout/naturals_recycler_view_item"
+        android:layout_above="@+id/loadMoreButton"
+        android:padding="8dp"
+
+        />
+
+
+    <Button
+        android:id="@+id/loadMoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/icogreen"
+        android:fontFamily="@font/inter_bold"
+        android:text="Daha fazla veri yükle..."
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+</RelativeLayout>

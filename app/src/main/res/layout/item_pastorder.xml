@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Doğal içceeck Resmi - En Solda Dikey -->
+        <ImageView
+            android:id="@+id/imageViewCoffee"
+            android:layout_width="125dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Natural Image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Doğal içceke İsmi -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+            <TextView
+                android:id="@+id/textViewCoffeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:text="Doğal İçecek İsmi"
+                android:textSize="16sp"
+                android:fontFamily="@font/inter_bold"
+                android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/textViewStatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="22dp"
+
+                    android:textColor="@android:color/holo_green_dark"
+                    android:text="Tamamlandı"
+                    android:layout_marginEnd="3dp"
+                    android:textAlignment="textEnd"
+                    android:layout_weight="1"
+                    android:textSize="15sp"
+                    android:fontFamily="@font/inter" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+
+
+                <TextView
+                    android:id="@+id/textViewDate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Tarih: 12.08.2024"
+                     android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="4dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textViewtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:text="Saat: 13:50"
+                    android:textSize="16sp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+
+            <TextView
+                android:id="@+id/textViewCount"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Adet"
+                android:gravity="left"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_bold"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+
+                <!-- Fiyat -->
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:id="@+id/textViewExtra1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Extra1"
+                    android:fontFamily="@font/inter"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_green_dark"
+
+                    />
+                <TextView
+                    android:id="@+id/textViewExtra2"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/inter"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Extra2"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    />
+                <TextView
+                    android:id="@+id/textViewExtra3"
+                    android:layout_width="0dp"
+                    android:fontFamily="@font/inter"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Extra3"
+                    android:textSize="16sp"
+                    android:gravity="center"
+                    android:textColor="@android:color/holo_green_dark"
+                    />
+
+            </LinearLayout>
+
+            <!-- Boyut Seçenekleri -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="4dp">
+                <TextView
+                    android:id="@+id/textViewSize"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Küçük"
+                    android:textSize="16sp"
+                    android:gravity="start"
+                    android:fontFamily="@font/inter_bold"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewPrice"
+                    android:gravity="right"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="20.00 ₺"
+                    android:layout_marginEnd="3dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="@android:color/holo_green_dark"
+
+                    android:layout_marginBottom="8dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_marginHorizontal="15dp"
+        android:background="@color/black"
+        />
+
+</LinearLayout>

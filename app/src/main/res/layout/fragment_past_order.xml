@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentRelative"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Mainfragments.PastOrderFragment">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/topmaterial"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="-25dp"
+        android:backgroundTint="@color/icogreen"
+        app:cardCornerRadius="30dp"
+        android:layout_below="@+id/parentRelative"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="NotSibling">
+
+        <TextView
+            android:id="@+id/pwtopinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/inter_bold"
+            android:text="Geçmiş Siparişlerim"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/topmaterial"
+        android:background="#F5F5F5"
+        tools:listitem="@layout/item_pastorder"
+        android:layout_marginHorizontal="15dp"
+        android:layout_above="@+id/loadMoreButton"
+        android:padding="8dp"
+
+        />
+    <Button
+        android:id="@+id/loadMoreButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginHorizontal="15dp"
+        android:backgroundTint="@color/icogreen"
+        android:fontFamily="@font/inter_bold"
+        android:text="Daha fazla veri yükle..."
+        android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/orderStatustext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:cardCornerRadius="30dp"
+        android:layout_marginHorizontal="20dp"
+        android:layout_centerInParent="true"
+        android:backgroundTint="@color/icogreen"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:src="@android:drawable/ic_dialog_alert"
+
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginVertical="20dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Henüz siparişiniz bulunmuyor..."
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_bold"
+                android:layout_marginBottom="15dp"
+                />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainfragments.QrFragment">
+
+    <com.google.android.material.card.MaterialCardView
+
+        android:id="@+id/topmaterial"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:layout_marginTop="-25dp"
+        android:backgroundTint="@color/icogreen"
+        app:cardCornerRadius="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/topinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:fontFamily="@font/inter_bold"
+            android:text="QR Sipariş Kodu"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <ImageView
+        android:id="@+id/qrCodeImageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topmaterial" />
+    <ImageView
+        android:id="@+id/qrCodeImageView1"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/itc_logo2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/topmaterial" />
+
+
+
+    <TextView
+        android:id="@+id/coffeawardinfotxtid"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter_bold"
+        android:text="Lütfen oluşturulan QR kodu kasada bulunan QR cihazı ile taratın."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/qrCodeImageView" />
+
+    <TextView
+        android:id="@+id/coffeawardinfo1txtid"
+        android:layout_width="match_parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginHorizontal="30dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/inter"
+        android:text="Bilgilendirme:\nSepette işlemleri tamamladığınızda veya  Ödül Merkezinden kahve kazandığınızda siparişin kasada görüntülenmesi için QR kod bu sayfada oluşur."
+        android:textColor="@color/black"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/coffeawardinfotxtid" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

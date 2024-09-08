@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "896330969941",
+    "project_id": "sozlukkahve-d5268",
+    "storage_bucket": "sozlukkahve-d5268.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:896330969941:android:84216128465bc887e035dc",
+        "android_client_info": {
+          "package_name": "com.itc.coffee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXnRayw_8kJ_HkBMfrTY6vzFc19YKGZDw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

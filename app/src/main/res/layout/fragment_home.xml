@@ -1,0 +1,719 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Mainfragments.HomeFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/homeFirstLayout"
+        android:visibility="visible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/topradius"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-25dp"
+            android:backgroundTint="@color/icogreen"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintTop_toTopOf="parent" />
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/home_fragment_logo_id"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/itc_logo2"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/homeFragmentSettingsId"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/img_person"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Merhaba  "
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/home_fragment_logo_id" />
+
+
+                <TextView
+                    android:id="@+id/home_layout_user_id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold"
+                    android:textSize="20sp"
+                    android:layout_marginTop="10dp"
+                    android:text="User,"
+                    app:layout_constraintStart_toEndOf="@+id/textView4"
+                    app:layout_constraintTop_toBottomOf="@+id/home_fragment_logo_id" />
+
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/home_layout_time_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="Hoşgeldiniz"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView4" />
+        </LinearLayout>
+
+
+
+
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/home_fragment_award_func"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@color/icogreen"
+            android:layout_marginTop="5dp"
+
+            app:cardCornerRadius="20dp"
+            android:layout_marginLeft="15dp"
+            android:backgroundTint="@color/white"
+            android:layout_marginRight="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_layout_time_id" >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/coffe_award_title_text"
+                    android:text="Ödül Merkezi"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/inter_bold"
+                    android:textSize="22dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <LinearLayout
+                android:id="@+id/coffeeAwardImageLayout"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_height="58dp"
+                android:orientation="horizontal"
+                tools:ignore="InvalidId">
+
+                <ImageView
+                    android:id="@+id/coffee_award_image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno" />
+
+                <ImageView
+                    android:id="@+id/coffee_award_image2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno"/>
+                <ImageView
+                    android:id="@+id/coffee_award_image3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno"/>
+                <ImageView
+                    android:id="@+id/coffee_award_image4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno"/>
+                <ImageView
+                    android:id="@+id/coffee_award_image5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno"/>
+                <ImageView
+                    android:id="@+id/coffee_award_image6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/coffeeiconno"/>
+
+
+
+
+            </LinearLayout>
+                <Button
+                    android:visibility="gone"
+                    android:id="@+id/coffe_award_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Ödül için QR oluştur"
+                    android:backgroundTint="@color/icogreen"
+                    android:textSize="21sp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginHorizontal="30dp"
+                    android:fontFamily="@font/inter_bold"
+                    android:textStyle="bold"
+                    />
+                <TextView
+                    android:id="@+id/coffe_award_counter_text"
+                    android:text="Kahve Ödül Sayacı: 0/6"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/inter_bold"
+                   android:layout_marginTop="12dp"
+                    android:layout_marginBottom="5dp"
+                    android:textSize="20sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+                <TextView
+                    android:id="@+id/coffe_award_info_text"
+                    android:text="Sözlük Kafe'de her alışveriş size hediye kahve olarak dönüyor. Sözlük Kafe'den altı alışverişine bir kahve bizden hediye. "
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textAlignment="center"
+                    android:fontFamily="@font/inter"
+                    android:textSize="18sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/home_fragment_offer_func"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="15dp"
+            android:backgroundTint="@color/icogreen"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/home_fragment_award_func" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/add1"
+                />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/customerCardDesign"
+            android:layout_width="match_parent"
+            android:layout_height="230dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="15dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="8dp"
+            tools:ignore="InvalidId">
+
+        <RelativeLayout
+            android:id="@+id/cardRelativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/purple"
+
+            >
+
+            <TextView
+                android:id="@+id/tvCardNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="5416 2345 00** ****"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+            <TextView
+                android:id="@+id/tvCardBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="60dp"
+                android:text="Bakiye: 0.00 ₺"
+                android:layout_marginVertical="15dp"
+                android:layout_below="@+id/tvCardNumber"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/itc_logo2"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+
+                />
+            <ImageView
+                android:id="@+id/settingsbtn"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@drawable/img_settings"
+                android:layout_below="@id/cardRelativeLayout"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="15dp"
+
+                tools:ignore="NotSibling" />
+
+
+            <TextView
+                android:id="@+id/tvCardHolder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="CARD HOLDER"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp" />
+
+        </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+        <LinearLayout
+            android:id="@+id/bgselection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="invisible"
+            >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/materialCardView">
+
+            <ImageButton
+                android:id="@+id/imageB1"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@color/icogreen" />
+
+            <ImageButton
+                android:id="@+id/imageB2"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffeecardbg1" />
+
+            <ImageButton
+                android:id="@+id/imageB3"
+                android:layout_width="0dp"
+                android:layout_height="100dp"
+                android:layout_margin="4dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/coffeecardbg2" />
+
+
+        </LinearLayout>
+            <Button
+                android:id="@+id/bgselected"
+                android:layout_width="match_parent"
+                android:layout_marginHorizontal="50dp"
+                android:textSize="22sp"
+                android:fontFamily="@font/inter_bold"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="Temayi Kaydet "
+                />
+        </LinearLayout>
+
+
+    </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/homeSecondlayout"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/topmaterial"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-25dp"
+            android:backgroundTint="@color/icogreen"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintTop_toTopOf="parent" >
+            <ImageView
+                android:id="@+id/homeFragmentbackId"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/img_back"
+                android:layout_marginLeft="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topmaterial" />
+
+            <TextView
+                android:id="@+id/topinfo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profilim"
+                /></com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/infotxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/inter"
+            android:text="Hesap bilgilerinizi güncelleyebilirisiniz..."
+            app:layout_constraintTop_toBottomOf="@+id/topmaterial"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/mailmainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/topmaterial">
+
+            <ImageView
+                android:id="@+id/mail_img_id"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/img_mail" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/maillayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:hint="Mail Adresi"
+                android:clickable="false"
+                app:helperText="*Mail Adresi değiştirilemez"
+                app:helperTextTextColor="@color/red"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:counterEnabled="true">
+
+
+                <EditText
+                    android:id="@+id/kmailTextt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:enabled="false"
+                    android:focusable="false"
+                    android:clickable="false"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_bold"
+                    android:inputType="text"
+                    />
+
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+            <LinearLayout
+            android:id="@+id/namemainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/mailmainlayout">
+
+            <ImageView
+                android:id="@+id/name_image_id"
+                android:layout_width="100dp"
+                android:scaleType="fitXY"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/img_person" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/namelayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+                app:endIconMode="clear_text"
+                android:hint="İsim Soyisim"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:counterEnabled="true">
+
+
+                <EditText
+                    android:id="@+id/kuserTextt"
+                    android:textSize="20sp"
+                    android:inputType="textPersonName"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_bold"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+
+                    />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/phonemainlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="15dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/namemainlayout">
+
+            <ImageView
+                android:id="@+id/phone_image_id"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="5dp"
+                android:scaleType="fitXY"
+                android:scaleX="0.8"
+                android:scaleY="0.8"
+                android:src="@drawable/img_phone" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/phonelayout"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:hint="Telefon Numarası"
+                app:boxCornerRadiusBottomStart="15dp"
+                app:boxCornerRadiusTopEnd="15dp"
+                app:counterEnabled="true"
+                app:counterMaxLength="15">
+
+
+                <EditText
+                    android:id="@+id/kphoneTextt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/inter_bold"
+                    android:inputType="phone"
+                    android:maxLength="15"
+                    android:phoneNumber="true" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/homePwbtn"
+            android:layout_width="match_parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_height="wrap_content"
+            android:text="Parola Değiştir"
+            android:textSize="22sp"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/icogreen"
+            />
+
+        <LinearLayout
+            android:layout_marginHorizontal="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/update_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:backgroundTint="#3F51B5"
+                android:fontFamily="@font/inter_bold"
+                android:text="Güncelle"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/logout_btn_id"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/red"
+                android:fontFamily="@font/inter_bold"
+                android:text="Çıkış Yap"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/homeThirdlayout"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.card.MaterialCardView
+
+            android:id="@+id/pwtopmaterial"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:layout_marginTop="-25dp"
+            android:backgroundTint="@color/icogreen"
+            app:cardCornerRadius="30dp"
+            app:layout_constraintTop_toTopOf="parent" >
+            <ImageView
+                android:id="@+id/homepwFragmentbackId"
+                android:layout_width="60dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/img_back"
+                android:layout_marginLeft="18dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/topmaterial" />
+
+            <TextView
+                android:id="@+id/pwtopinfo"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profilim"
+                /></com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/pwinfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Parola sıfırlama için mail adresinize mail gönderilecek. Gönderilmesini onaylıyor musunuz?"
+            android:textAlignment="center"
+            android:layout_marginHorizontal="30dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/inter_bold"
+            android:textSize="24sp"
+            android:layout_marginTop="120dp"
+            app:layout_constraintTop_toBottomOf="@+id/pwtopmaterial"/>
+
+
+        <Button
+            android:id="@+id/pwchange_btn_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:layout_marginHorizontal="30dp"
+            android:backgroundTint="@color/icogreen"
+            android:fontFamily="@font/inter_bold"
+            android:text="Onayla"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toBottomOf="@+id/pwinfo"/>
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

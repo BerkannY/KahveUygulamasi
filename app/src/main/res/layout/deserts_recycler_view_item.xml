@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        tools:ignore="MissingConstraints">
+
+        <!-- Tatlı Resmi - En Solda Dikey -->
+        <ImageView
+            android:id="@+id/imageViewCoffee"
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="Desert Image"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- Kahve İsmi -->
+            <TextView
+                android:id="@+id/textViewCoffeeName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tatlı İsmi"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:layout_marginBottom="4dp"/>
+
+            <!-- Fiyat -->
+            <TextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="20.00 ₺"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@android:color/holo_green_dark"
+                android:layout_gravity="end"
+
+                android:layout_marginBottom="8dp"/>
+
+
+            <!-- Sepete Ekle Butonu -->
+            <Button
+                android:id="@+id/buttonAddToCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sepete Ekle"
+                android:onClick="addToCart"
+                android:backgroundTint="@color/icogreen"
+                android:layout_gravity="end"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

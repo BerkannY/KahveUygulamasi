@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:background="@android:color/white"
+    android:layout_marginBottom="8dp">
+
+    <!-- Kahve Resmi -->
+    <ImageView
+        android:id="@+id/imageViewCoffee"
+        android:layout_width="120dp"
+        android:layout_height="140dp"
+        android:layout_marginEnd="8dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/itc_logo" />
+
+    <!-- Ürün Bilgileri -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <!-- Kahve Adı -->
+        <TextView
+            android:id="@+id/textViewCoffeeName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kahve Adı"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Kahve Fiyatı -->
+        <TextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00 TL"
+            android:textSize="14sp"
+            android:textColor="@android:color/holo_red_dark" />
+
+        <!-- Boyut ve Ekstra Bilgileri -->
+        <TextView
+            android:id="@+id/textViewSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewExtras"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="14sp" />
+
+        <!-- "+" ve "-" Butonları ile Sayı Göstergesi -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <!-- "-" Butonu -->
+            <ImageView
+                android:id="@+id/buttonDecrement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_red_light"
+                android:padding="8dp"
+                android:src="@drawable/img_remove"
+                app:tint="@android:color/white" />
+
+            <!-- Sayı Göstergesi -->
+            <TextView
+                android:id="@+id/textViewQuantity"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="18sp"
+                android:textColor="@android:color/black" />
+
+            <!-- "+" Butonu -->
+            <ImageView
+                android:id="@+id/buttonIncrement"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@android:color/holo_green_light"
+                android:padding="8dp"
+                android:src="@android:drawable/ic_input_add"
+                app:tint="@android:color/white" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
